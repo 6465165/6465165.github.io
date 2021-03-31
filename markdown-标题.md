@@ -9,3 +9,10 @@
 
   [1]: http://www.google.com/
   [runoob]: http://www.runoob.com
+
+
+```javascript
+$(document).ready(function () {
+    alert('RUNOOB');
+});
+```
