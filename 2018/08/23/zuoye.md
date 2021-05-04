@@ -5,4 +5,29 @@
 ## 一、网站目录结构
 <img src="tree.png" width="30%">
 ## 二、网站截图
+<br>
+首页：  
 <img src="首页.png" width="30%">
+<br>
+blog列表页：  
+<img src="blog列表页.png" width="30%">
+<br>
+markdown练习：
+<img src="markdown练习.png" width="30%">
+<br>
+kiwifruit:
+<img src="kiwifruit.png" width="30">
+<br>
+staff列表页:
+<img src="staff列表页.png" width="30%">
+<br>
+作者简介页面：
+<img src="作者简介.png" width="30%">
+<br>
+about:
+<img src="about.png" width="30%">
+<br>
+## 三、实验过程
+按照实验指导书一步一步走
+## 四、总结
+在github上以.md结尾的，在做链接的时候要写成.html,不然会出现乱码
