@@ -18,8 +18,4 @@ $(document).ready(function () {
 ```
 这是一个链接 [菜鸟教程](https://www.runoob.com)  
 ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
-<br>
-|  表头   | 表头  |
-|  ----  | ----  |
-| 单元格  | 单元格 |
-| 单元格  | 单元格 |
+
