@@ -5,3 +5,4 @@
 ## 一、网站目录结构
 <img src="tree.png" width="30%">
 ## 二、网站截图
+<img src="首页.png" width="30%">
