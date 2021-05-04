@@ -16,7 +16,7 @@ markdown练习：
 <img src="markdown练习.png" width="30%">
 <br>
 kiwifruit:
-<img src="kiwifruit.png" width="30">
+<img src="kiwifruit.png" width="30%">
 <br>
 staff列表页:
 <img src="staff列表页.png" width="30%">
