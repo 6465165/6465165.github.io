@@ -12,19 +12,24 @@
 blog列表页：  
 <img src="blog列表页.png" width="30%">
 <br>
-markdown练习：
+markdown练习：  
+<br>
 <img src="markdown练习.png" width="30%">
 <br>
 kiwifruit:
+<br>
 <img src="kiwifruit.png" width="30%">
 <br>
 staff列表页:
+<br>
 <img src="staff列表页.png" width="30%">
 <br>
 作者简介页面：
+<br>
 <img src="作者简介.png" width="30%">
 <br>
 about:
+<br>
 <img src="about.png" width="30%">
 <br>
 ## 三、实验过程
