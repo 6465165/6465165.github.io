@@ -28,6 +28,9 @@ about:
 <img src="about.png" width="30%">
 <br>
 ## 三、实验过程
+<br>
 按照实验指导书一步一步走
+<br>
 ## 四、总结
+<br>
 在github上以.md结尾的，在做链接的时候要写成.html,不然会出现乱码
