@@ -23,9 +23,7 @@ staff列表页:
 <br>
 作者简介页面：  
 <img src="作者简介.png" width="30%">
-<br>
-about:
-<br>
+about:  
 <img src="about.png" width="30%">
 <br>
 ## 三、实验过程
