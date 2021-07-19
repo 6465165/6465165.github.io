@@ -1,3 +1,7 @@
+01矩阵
+给定一个由 0 和 1 组成的矩阵，找出每个元素到最近的 0 的距离。
+
+两个相邻元素间的距离为 1 。
 class Solution {
     static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
@@ -34,3 +38,63 @@ class Solution {
         return dist;
     }
 }
+
+
+
+
+
+2：钥匙和房间
+有 N 个房间，开始时你位于 0 号房间。每个房间有不同的号码：0，1，2，...，N-1，并且房间里可能有一些钥匙能使你进入下一个房间。
+
+在形式上，对于每个房间 i 都有一个钥匙列表 rooms[i]，每个钥匙 rooms[i][j] 由 [0,1，...，N-1] 中的一个整数表示，其中 N = rooms.length。 钥匙 rooms[i][j] = v 可以打开编号为 v 的房间。
+
+最初，除 0 号房间外的其余所有房间都被锁住。
+
+你可以自由地在房间之间来回走动。
+
+如果能进入每个房间返回 true，否则返回 false。
+//深度优先
+class Solution {
+    public boolean canVisitAllRooms(List<List<Integer>> rooms) {
+        int n = rooms.size(), num = 0;
+        boolean[] vis = new boolean[n];
+        Queue<Integer> que = new LinkedList<Integer>();
+        vis[0] = true;
+        que.offer(0);
+        while (!que.isEmpty()) {
+            int x = que.poll();
+            num++;
+            for (int it : rooms.get(x)) {
+                if (!vis[it]) {
+                    vis[it] = true;
+                    que.offer(it);
+                }
+            }
+        }
+        return num == n;
+    }
+}
+
+广度优先：
+class Solution {
+public:
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
+        int n = rooms.size(), num = 0;
+        vector<int> vis(n);
+        queue<int> que;
+        vis[0] = true;
+        que.emplace(0);
+        while (!que.empty()) {
+            int x = que.front();
+            que.pop();
+            num++;
+            for (auto& it : rooms[x]) {
+                if (!vis[it]) {
+                    vis[it] = true;
+                    que.emplace(it);
+                }
+            }
+        }
+        return num == n;
+    }
+};
