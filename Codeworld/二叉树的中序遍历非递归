@@ -4,7 +4,7 @@ class Solution{
 List<Interger> res=new  LinkedList<Interger>();
 Queue<Interger> stk=new LinkedList<Interger>();
 while(root!=null&&!stk.isEmpty()){
-         while(root!=null){
+         while(root!=null){             //这两个条件如何得出
          stk.push(root);
          root=root.left;
          }
@@ -13,3 +13,24 @@ while(root!=null&&!stk.isEmpty()){
      root=root.right;
    }
 }  
+
+
+
+//递归
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<Integer>();
+        inorder(root, res);
+        return res;
+    }
+
+    public void inorder(TreeNode root, List<Integer> res) {
+        if (root == null) {
+            return;
+        }
+        inorder(root.left, res);
+        res.add(root.val);
+        inorder(root.right, res);
+    }
+}
+
