@@ -1,0 +1,15 @@
+//非递归
+class Solution{
+ public List<Integer> inorderTraversal(TreeNode root) {
+List<Interger> res=new  LinkedList<Interger>();
+Queue<Interger> stk=new LinkedList<Interger>();
+while(root!=null&&!stk.isEmpty()){
+         while(root!=null){
+         stk.push(root);
+         root=root.left;
+         }
+     }
+     res.add(stk.pop().val;
+     root=root.right;
+   }
+}  
