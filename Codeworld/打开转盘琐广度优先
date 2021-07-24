@@ -1,0 +1,56 @@
+class Solution {
+    public static int openLock(String[] deadends, String target) {
+        Queue<String> queue = new LinkedList<String>();
+        Set<String> seen = new HashSet<String>();
+        Set<String> set = new HashSet<String>();
+        for(int i = 0; i < deadends.length; i++) {
+            set.add(deadends[i]);
+        }
+        if (set.contains("0000"))
+            return -1;
+        queue.offer("0000");
+        int step = 0;
+        if(target.equals("0000"))
+        return 0;
+        seen.add("0000");
+        while (!queue.isEmpty()) {
+            ++step;
+            int size=queue.size();
+            for (int i = 0; i < size; i++) {
+                String f = queue.poll();
+                for (String a : get(f)) {
+                    if (!seen.contains(a) && !set.contains(a)) {
+                        if (a .equals(target)){
+                            return step;
+                        }
+                        seen.add(a);
+                        queue.offer(a);
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+
+
+
+        public static char pre(char a){
+            return a=='0'?(char)'9':(char)(a-1);
+        }
+        public static  char aft(char a){
+            return a=='9'?'0':(char)(a+1);
+        }
+       public static List<String> get(String f){
+            List<String> b=new LinkedList<String>();
+            char[] c=f.toCharArray();
+            for(int i=0;i<4;i++){
+                c[i]=pre(c[i]);
+                b.add(new String(c));
+                c[i]=aft(f.toCharArray()[i]);
+                b.add(new String(c));
+                c[i]=f.toCharArray()[i];
+            }
+            return b;
+        }
+        }
+    
